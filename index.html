@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html>
+<!-- [if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!-- [if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!-- [if gt IE 9]><html> <![endif] -->
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta content="HTML5 Template" name="keywords" />
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>Indflex : Indus Trade Links</title>
+    <!-- Mobile Metas -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <!-- font-awesome -->
+    <link href="css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- flaticon -->
+    <link href="css/flaticon/css/flaticon.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- owl-carousel -->
+    <link href="css/owl.carousel.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- sidebar on small screens -->
+    <link href="css/easy-sidebar.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- prettyPhoto -->
+    <link href="js/pp/css/prettyPhoto.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- isotope -->
+    <link href="js/vendors/isotope/isotope.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- preloader CSS -->
+    <link href="css/spinkit/spinkit.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- Main CSS -->
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+
+</head>
+<style>
+    .project-overlay{
+        background-color: #FFB600;
+    }
+    .project-overlay h4,a:hover{
+        color: white !important;
+    }
+    .project-overlay h4,a:hover +  .project-overlay span{
+        color: black;
+    }
+    .project-overlay span{
+        color: white;
+        font-weight: 600;
+    }
+    body{
+        font-family: sans-serif !important;
+    }
+    .dropdown-menu li a:hover{
+        color: #f6be30 !important;
+    }
+    .logo-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    #colour-variations li a[data-theme=style-rtl],
+    #colour-variations li a[data-theme=ltr] {
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: auto;
+        height: auto;
+    }
+    
+    #colour-variations {
+        padding: 10px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        width: 140px;
+        position: fixed;
+        left: 0;
+        top: 160px;
+        z-index: 999999;
+        background: #fff;
+        border-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+    }
+    
+    #colour-variations.sleep {
+        margin-left: -140px;
+    }
+    
+    #colour-variations h3 {
+        text-align: center;
+        ;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #777;
+        margin: 0 0 10px 0;
+        padding: 0;
+        ;
+    }
+    
+    #colour-variations ul,
+    #colour-variations ul li {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #colour-variations ul {
+        margin-bottom: 20px;
+        float: left;
+    }
+    
+    #colour-variations li {
+        list-style: none;
+        display: inline;
+    }
+    
+    #colour-variations li a {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        float: left;
+        margin: 5px;
+    }
+    
+    #colour-variations li a[data-theme=style] {
+        background: #fff;
+        border: 1px solid #ccc
+    }
+    
+    #colour-variations li a[data-theme=red] {
+        background: #FA5555;
+    }
+    
+    #colour-variations li a[data-theme=turquoise] {
+        background: #27E1CE;
+    }
+    
+    #colour-variations li a[data-theme=blue] {
+        background: #2772DB;
+    }
+    
+    #colour-variations li a[data-theme=orange] {
+        background: #FF7844;
+    }
+    
+    #colour-variations li a[data-theme=yellow] {
+        background: #FCDA05;
+    }
+    
+    #colour-variations li a[data-theme=pink] {
+        background: rgb(251, 137, 155);
+    }
+    
+    #colour-variations li a[data-theme=purple] {
+        background: #7045FF;
+    }
+    
+    #colour-variations a[data-layout=boxed],
+    #colour-variations a[data-layout=wide] {
+        padding: 2px 0;
+        width: 48%;
+        border: 1px solid #ededed;
+        text-align: center;
+        color: #777;
+        display: block;
+    }
+    
+    #colour-variations a[data-layout=boxed]:hover,
+    #colour-variations a[data-layout=wide]:hover {
+        border: 1px solid #777;
+    }
+    
+    #colour-variations a[data-layout=boxed] {
+        float: left;
+    }
+    
+    #colour-variations a[data-layout=wide] {
+        float: right;
+    }
+    
+
+    .option-toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 5px;
+        margin-right: -30px;
+        width: 30px;
+        height: 30px;
+        background: #8dc63f;
+        text-align: center;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+    }
+    
+
+    .option-toggle i {
+        top: 5px;
+        position: relative;
+        font-size: 20px;
+    }
+    
+    .option-toggle:hover,
+    .option-toggle:focus,
+    .option-toggle:active {
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    .brandLogos::-webkit-scrollbar{
+        display: none;
+    }
+    .indflexLogo{
+        width: 15rem;
+    }
+    @media (max-width:1000px) {
+        .indflexLogo{
+        width: 13rem;
+    }
+    }
+    @media (max-width:600px) {
+        .indflexLogo{
+        width: 11rem;
+    }
+    }
+    @media (max-width:400px) {
+        .indflexLogo{
+        width: 9rem;
+    }
+    }
+    @media (max-width:550px) {
+        .brandImage{
+            width: 13rem;
+        }
+    }
+    @media (max-width:600px) {
+        .iframeContainer{
+            width: 98% !important;
+            aspect-ratio: 1/0.6 !important;
+        }
+    }
+    .projectsContainer img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+    
+
+
+</style>
+
+<body>
+    <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+         PRELOADER START
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner"> </div>
+        </div>
+    </div>
+    <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+         PRELOADER END
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+    <header class="header-2">
+        <div class="container" style="width: 100%;">
+            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+         NAVGATION START
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+            <div class="navbar-header" style="display: flex;align-items: center;">
+                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+         BURGER MENU START
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                <button class=" burger-menu easy-sidebar-toggle"></button>
+                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+         BURGER MENU END
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+         LOGO START
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                <a class="navbar-brand" href="index.html"> <img class="indflexLogo" alt="" src="images/indusLogo.svg" style=" margin-top: -0.5rem;mix-blend-mode: multiply;"></a> 
+                <a class="" href="index.html" style="z-index: 888;"> <img  alt="" class="iso" src="images/iso logo (1).jpg" style=" margin-top: -0.5rem;mix-blend-mode: multiply;width: 10rem;min-width: 7rem;"></a> 
+
+                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+         LOGO END
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+            </div>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div id="navbar" class="navbar-collapse ">
+                        <ul class="nav navbar-nav navbar-right ">
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU HOME START
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                           <li class="active"> <a   href="index.html" >Home</a>
+                                
+                           </li>
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU HOME END
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU PAGES START
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <li class="dropdown"> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                           HOSES</a>
+                           <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a href="hydraulic-hose-pipes.html">HYDRAULIC HOSE PIPES</a></li>
+                            <li><a href="industrial-hose-pipes.html">INDUSTRIAL HOSE PIPES</a></li>
+                            <li><a href="ptfe-hose-pipes.html">PIFE HOSE PIPES</a></li>
+                            <li><a href="stainless-steel-hose.html">STAINLESS STEEL BELOW HOSE PIPES</a></li>
+                            <li><a href="pvc-braided-hose.html">NYLON BRAIDED PVC HOSE</a></li>
+                            <li><a href="air-conditioning-refregerent.html">AIR CONDITIONING REFRIGERANT HOSE</a></li>
+                            <li><a href="angus-hose.html">ANGUS AVIATION FUELING HOSE</a></li>
+                            <li><a href="plutone-hose.html">PLUTONE BIO PHATHALATE FOOD GRADE PVC STEEL REINFORCED HOSE</a></li>
+                        </ul>
+                            </li>
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU HOME END
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU Projects START
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <li class="dropdown"> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                           TRELLEBORG</a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="Food-Grade-Hose.html">FOOD GRADE HOSE</a></li>
+                                    <li><a href="construction-hose.html">CONSTRUCTION HOSE</a> </li>
+                                    <li><a href="chemical-hose.html">CHEMICAL HOSE</a> </li>
+                                    <li><a href="oil&petroleum-hose.html">OIL & PETROLEUM HOSE</a> </li>
+                                   
+                                </ul>
+                            </li>
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU Projects END
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU SHOP START
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <li class="dropdown "> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                           COUPLINGS & ADAPTERS</a>
+                                <ul class="dropdown-menu  dropdown-menu-left">
+                                    <li><a href="spiral-fitting.html">SPIRAL FITTING</a></li>
+                                    <li><a href="megacrimp-couplings.html">MEGACRIMP COUPLINGS</a></li>
+                                    <li><a href="couplings & adapters.html">COUPLINGS & ADAPTERS</a></li>
+                                    <li><a href="quick-release-couplings.html">QUICK RELEASE COUPLINGS</a></li>
+                                    <li><a href="toggle-clamps.html">CLAMPS</a></li>
+                                    <li><a href="oil-seals.html">OIL SEALS AND O-RINGS</a></li>
+                                    <li><a href="crimping-machine.html">CRIMPING MACHINES</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown "> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                                CONVEYOR BELTS</a>
+                                     <ul class="dropdown-menu  dropdown-menu-left">
+                                         <li><a style="text-transform: uppercase;" href="ammega-conveyor-belt.html">Ammega Make Conveyor belt</a></li>
+                                         <li><a style="text-transform: uppercase;" href="flexco-conveyor-belt.html">Flexco Conveyor belt fastening</a></li>
+                                         <li><a style="text-transform: uppercase;" href="flexco-belt-cleaning.html">Flexco Belt Cleaning systems</a></li>
+                                        
+                                     </ul>
+                                 </li>
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU SHOP END
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU Blog START
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                           <li class="dropdown"> <a href="videos.html" >
+                            VIDEOS</a>
+                                 
+                             </li>
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU Blog END
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU ShortCodes START
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <li class="dropdown"> <a href="about.html">
+                           ABOUT US</a>
+                                
+                            </li>
+                            <li class="dropdown"> <a href="contact.html">
+                                CONTACT US</a>
+                                     
+                                 </li>
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                           MENU ShortCodes END
+                           -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                  SHOPCART, SEARCH AND GET QUOTE AREA START
+                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                            
+                                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                  SEARCH START
+                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                                
+                                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                  SHOPPING CART START
+                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                                
+                                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                  QUOTE START
+                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                                
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+                  SHOPCART, SEARCH AND GET QUOTE AREA END
+                  -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+            NAVIGATION END
+            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+        </div>
+    </header>
+    <!-- /. NAVIGATION ENDS
+			========================================================================= -->
+    <!-- SLIDER STARTS
+			========================================================================= -->
+    <div class="slider">
+        <div id="rev_slider_204_1_wrapper" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive">
+            <!-- START REVOLUTION SLIDER 5.1.1RC auto mode -->
+            <div id="rev_slider_204_1" class="rev_slider fullwidthabanner" data-version="5.1.1RC" style="display: none;">
+                <ul>
+                    <li data-description="" data-easein="default" data-easeout="default" data-index="rs-4" data-masterspeed="1500" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-thumb="images/banner-1.jpg" data-title="Slide 1" data-transition="random"> <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/excavator-construction-site.jpg">
+                        <div id="slide-4-layer-1" class="tp-caption darnaverylargetextprimary   tp-resizeme" data-height="auto" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;" data-transform_out="x:left;skX:45px;s:500;s:500;" data-width="auto" data-x="30" data-y="200" style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> INDFLEX</div>
+                        <div id="slide-4-layer-2" class="tp-caption darnaverylargetext   tp-resizeme" data-height="auto" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000" data-transform_idle="" data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;s:500;" data-width="auto" data-x="40" data-y="270" style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);color: #da251c;"> INDUS TRADE LINKS</div>
+
+                        <div id="slide-4-layer-4" class="tp-caption   tp-resizeme" data-height="auto" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;e:Bounce.easeOut;" data-transform_out="x:right;skX:-85px;s:300;s:300;" data-width="auto" data-x="30" data-y="400" style="z-index: 8; white-space: nowrap;"> <a class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
+					About Us</a></div>
+                    </li>
+                    <!-- <li data-description="" data-easein="default" data-easeout="default" data-index="rs-5" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-thumb="images/banner-1.jpg" data-title="Slide 2" data-transition="random"> <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="images/banner-1.jpg">
+                        <div id="slide-5-layer-1" class="tp-caption darnalargetext   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:1000;e:easeOutBounce;" data-transform_out="x:left;skX:45px;s:300;s:300;" data-width="auto" data-x="center" data-y="200" style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> <span class="darna-slider-border-bottom">Engineering your dreams 
+					with us</span></div>
+                        <div id="slide-5-layer-2" class="tp-caption darnasmalltext   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000" data-transform_idle="" data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;" data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;s:500;" data-width="auto" data-x="center" data-y="300" style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> INDFLEX, counted admidst the top rankers in the domain of hoses</div>
+                        <div id="slide-5-layer-3" class="tp-caption   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeOutBounce;" data-transform_out="x:200px;skX:-85px;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="382" style="z-index: 7; white-space: nowrap;"> <a class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
+                            About Us</a></div>
+                    </li> -->
+                    <li data-description="" data-easein="default" data-easeout="default" data-index="rs-6" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-thumb="images/couplings1(1).jpg" data-title="Slide 3" data-transition="random"> <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="images/couplings1(1).jpg">
+                        <div id="slide-6-layer-1" class="tp-caption darnalargetext   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="y:top;s:1000;e:easeOutElastic;" data-transform_out="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="185" style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> Welcome to Indus Trade Links</div>
+                        <div id="slide-6-layer-2" class="tp-caption darnalargeprimarybg   tp-resizeme" data-elementdelay="0.1" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;" data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="250" style="z-index: 6; white-space: nowrap; color: rgba(255, 255, 255, 1.00); background-color: rgba(255, 182, 0, 100.00); padding: 15px 20px 15px 20px; border-color: rgba(255, 255, 255, 1.00);"> ALWAYS DEDICATED &amp; DEVOTED</div>
+                        <!-- <div id="slide-6-layer-3" class="tp-caption darnasmalltext2   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000" data-transform_idle="" data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="x:{-250,250};y:{-150,150};rX:{-90,90};rY:{-90,90};rZ:{-360,360};sX:0;sY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="343" style="z-index: 7; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> We aim to eliminate the task of dividing your project between different architecture and
+                            <br /> construction company. We are a company that offers design and build services for
+                            <br /> you from initial sketches to the final construction.</div> -->
+                        <div id="slide-6-layer-4" class="tp-caption   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-width="auto" data-x="center" data-y="430" style="z-index: 8; white-space: nowrap;margin-top: -6rem !important;"> <a class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
+					About Us</a> </div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. SLIDER ENDS
+			========================================================================= -->
+    <!-- <div class="home-info" style="padding: 30px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="home-info-thumb">
+                        <a class="prettyPhoto" data-rel="prettyPhoto" href="images/other/1.jpg"> <img alt="" style="width: 100%;" class="img-responsive" src="images/other/1.jpg" /></a>
+                    </div>
+                    <div class="home-info-content">
+                        <h4 ><i class="fa fa-thumbs-o-up"></i><a href="#">Why to Choose 
+					Us</a></h4>
+                        <p style="text-align: justify;">Temporibus autem quibusdam et aut officiis debitis is aut rerum necessitatibus saepe eveniet ut et seo lage voluptates repudiandae sint et molestiae non mes for recusandae.</p>
+ 
+                        </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="home-info-thumb">
+                        <a href="https://youtu.be/8A3kVz2zknM" data-rel="prettyPhoto" class="prettyPhoto"> <img alt="" style="width: 100%;" class="img-responsive" src="images/other/2.jpg" /><i class="fa fa-play-circle"></i></a>
+                    </div>
+                    <div class="home-info-content">
+                        <h4><i class="fa fa-link"></i><a href="#">Mission &amp; Vission</a></h4>
+                        <p style="text-align: justify;">Temporibus autem quibusdam et aut officiis debitis is aut rerum necessitatibus saepe eveniet ut et seo lage voluptates repudiandae sint et molestiae non mes for recusandae.</p> 
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="home-info-thumb">
+                        <a class="prettyPhoto" data-rel="prettyPhoto" href="images/other/3.jpg"> <img alt="" style="width: 100%;" class="img-responsive" src="images/other/3.jpg" /></a>
+                    </div>
+                    <div class="home-info-content">
+                        <h4><i class="fa fa-paper-plane"></i><a href="#">Strategy</a></h4>
+                        <p style="text-align: justify;">Temporibus autem quibusdam et aut officiis debitis is aut rerum necessitatibus saepe eveniet ut et seo lage voluptates repudiandae sint et molestiae non mes for recusandae.</p>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container services" style="background-color: #f6be30; padding: 2rem 5%; margin-top: 4rem;">
+        <div class="row" >
+            <div class="col-md-12" >
+                <h1 style="margin-bottom: 3rem; text-align: center;">Our Services And Solutions</h1>
+            </div>
+            <div class="col-md-12 " style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
+                <p style="text-align: justify;color: black;">We supply a wide range of customized hydraulic and industrial hose assemblies suitable for different mediums of application, at specific temperature and pressure. Sample verification at customer sites can be offered to the clients based on request. </p>
+            </div>
+            <div class="col-md-12" style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
+                <p style="text-align: justify;color: black;">We have a wide range of SS corrugated bellow hoses which are used in extreme high temperature, which are tig welded and supplied after necessary testing. The medium of application is mostly gases, steam and acids</p>
+            </div>
+            <div class="col-md-12" style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
+                <p style="text-align: justify;color: black;">Our product line includes food grade, chemical, construction and oil & petroleum transfer hoses - FDA approved Food Grade Hoses for all kinds of food, Chemical hoses for acids and Construction Hoses for cement feeding and concrete loading/unloading purpose</p>
+            </div>
+            <div class="col-md-12" style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
+                <p style="text-align: justify;color: black;hyphens: auto;"> We are active suppliers of all kinds of conveyor belts - rubber(plain & rough top), pu, pvc, cotton canvas including food grade type. Indus also undertakes fastening of all these kinds of conveyor belts using the Flexco belt joining tool.  The industrial segments catered to includes Airport baggage, Packaging, Tyre manufacturers, Cattlefeed, Hospitals, Cement Plants, Mineral and Chemical Cos, Plywood, Crumb Rubber, Tea, Laundry, Rice Mill etc.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="home-quotes">
+        <div class="container">
+            <div class="content-head content-head-lite text-center text-uppercase">
+                <h4>What people said</h4>
+                <p>They happy with us</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-item-auto">
+                        <div class="quote-info text-center">
+                            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felisCras consequat.</p> <i class="fa fa-quote-left"></i> <cite class="text-uppercase">Cras Henry<span>G5 - Rome 
+							- Italia</span></cite> </div>
+                        <div class="quote-info text-center">
+                            <p>Morbi in sem quis dui Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euis. Cras consequat.</p> <i class="fa fa-quote-left"></i> <cite class="text-uppercase">felis Henry<span>G5 - Rome 
+							- Italia</span></cite> </div>
+                        <div class="quote-info text-center">
+                            <p>dui placerat Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euis. Cras consequat.</p> <i class="fa fa-quote-left"></i> <cite class="text-uppercase">Ornare<span>G5 - Rome 
+							- Italia</span></cite> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="home-projects-full" style="padding: 0px 0px 40px;">
+        <div class="container">
+            <div class="content-head text-center text-uppercase">
+                <h4>Products</h4>
+            </div>
+        </div>
+
+        <div class="container projectsContainer">
+            <div class="row">
+                <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item architecture interiordesign">
+                        <div class="project-item"> <img src="images/hydraulic-changed 1.png" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600">
+                                <h4><a href="hydraulic-hose-pipes.html">HYDRAULIC HOSE PIPES</a></h4> <span class="project-cat">HOSES</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item contruction">
+                        <div class="project-item"> <img src="images/industrial-hose-pipes1-changed..gif.png" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600;">
+                                <h4><a href="industrial-hose-pipes.html">INDUSTRIAL HOSE PIPES</a></h4> <span class="project-cat">HOSES</span> 
+                                <!-- <a class="project-expand prettyPhoto" data-rel="prettyPhoto" href="images/home/projects/2.jpg"> <i class="fa fa-arrows-alt"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item architecture interiordesign ">
+                        <div class="project-item"> <img src="images/Food-Grade-Hose1-changed..jpg.png" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600;">
+                                <h4><a href="#">FOOD GRADE HOSE</a></h4> <span class="project-cat">TRELLEBORG</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item contruction ">
+                        <div class="project-item"> <img src="images/construction-hose-changed..jpg.png" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600;">
+                                <h4><a href="construction-hose.html">CONSTRUCTION HOSE</a></h4> <span class="project-cat">TRELLEBORG</span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="  col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item interiordesign contruction ">
+                        <div class="project-item"> <img src="images/spiral-fitting1-changed.jpg.png" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600;">
+                                <h4><a href="spiral-fitting.html">SPIRAL FITTING</a></h4> <span class="project-cat">COUPLINGS & ADAPTERS</span> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item architecture">
+                        <div class="project-item"> <img src="images/toggle-clamps-changed..png" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600;">
+                                <h4><a href="toggle-clamps.html">TOGGLE CLAMPS</a></h4> <span class="project-cat">COUPLINGS & ADAPTERS</span> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item contruction">
+                        <div class="project-item"> <img src="images/mechanical-belt-fastners.jpg" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600;">
+                                <h4><a href="conveyor-belt.html">Flexco Conveyor belt fastening</a></h4> <span class="project-cat">CONVEYOR BELTS</span> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
+                    <div class="folio-item contruction">
+                        <div class="project-item"> <img src="images/conveyor-cleaning1.jpg" class="img-responsive" alt="" />
+                            <div class="project-overlay" style="background-color: #FFB600;">
+                                <h4><a href="conveyor-belt.html">Flexco Belt Cleaning systems</a></h4> <span class="project-cat">CONVEYOR BELTS</span> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container text-center space-top-45"> <a class="bttn bttn-bdr-black bttn-md center-block hidingBtn " href="projects_grid_4col.html">View All</a> </div>
+
+
+        
+
+
+        
+    </div>
+
+    <div class="container " style="background-color: rgba(0, 0, 0, .7);padding: 2rem;">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <h1  style="margin-top: 2rem; color: white; font-size: clamp(3rem,4vw,4rem);">MANUFACTURES AND SUPPLIERS OF HOSES, COUPLINGS AND ADAPTERS</h1> -->
+                <p style="text-align: justify;margin-top:2rem ; color: white; font-size: 1.5rem;">
+                    INDUS TRADE LINKS since its’ inception, is the sole distributor and assembler for Gates products in Kerala. Gates Corporation USA, founded in 1911, is the world’s leading manufacturer of power transmission belts and a premier global manufacturer of power products (industrial & hydraulic hoses/end fittings and power transmission belts). A subsidiary of the parent company, Gates India Ltd; from Lalru, offers a complete portfolio of premium product and service solutions for both replacement and first-fit applications across targeted end markets, which encompass process and speciality, construction, agriculture, energy, transportation and automotive.............</p> <br>
+                
+            </div>
+            <div class="col-md-12">
+                <a  style=" margin-top: 2rem; padding: 1rem 2rem; color: white; font-size: 1.5rem; font-weight: 600; border-radius: 10px; background-color: rgba(155, 152, 152, 0.5);" href="about.html">About Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="display: flex;align-items: center;justify-content: center;margin-top: 3rem;">
+        <div class="iframeContainer" style="width: 80%;aspect-ratio: 1/0.5;">
+            <iframe style="width: 100%;height: 100%;" src="https://www.youtube.com/embed/Mw7atyV_tfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    <!-- <div class="counter-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="counter-box-info text-center text-uppercase">
+                        <div class="count"> 56</div>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="counter-box-info text-center text-uppercase">
+                        <div class="count"> 360</div>
+                        <p>Workers Employed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="counter-box-info text-center text-uppercase">
+                        <div class="count"> 89</div>
+                        <p>Honor Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="counter-box-info text-center text-uppercase">
+                        <div class="count"> 42</div>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="team-wrap">
+        <div class="container">
+            <div class="content-head text-center text-uppercase">
+                <h4>Our team</h4>
+                <p>High Professional of our engineers</p>
+            </div>
+            <div class="row">
+                <div id="team-wrap" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="team-staff text-center">
+                            <div class="staff-pic"> <img alt="" class="img-responsive" src="images/team/1.jpg" />
+                                <div class="staff-overlay">
+                                    <ul class="team-social list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin">
+									</i></a></li>
+                                        <li>
+                                            <a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-info text-uppercase">
+                                <h3>Amir Mahmoud</h3>
+                                <p>Project Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-staff text-center">
+                            <div class="staff-pic"> <img alt="" class="img-responsive" src="images/team/2.jpg" />
+                                <div class="staff-overlay">
+                                    <ul class="team-social list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin">
+									</i></a></li>
+                                        <li>
+                                            <a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-info text-uppercase">
+                                <h3>Amir Mahmoud</h3>
+                                <p>Project Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-staff text-center">
+                            <div class="staff-pic"> <img alt="" class="img-responsive" src="images/team/3.jpg" />
+                                <div class="staff-overlay">
+                                    <ul class="team-social list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin">
+									</i></a></li>
+                                        <li>
+                                            <a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-info text-uppercase">
+                                <h3>Amir Mahmoud</h3>
+                                <p>Project Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-staff text-center">
+                            <div class="staff-pic"> <img alt="" class="img-responsive" src="images/team/4.jpg" />
+                                <div class="staff-overlay">
+                                    <ul class="team-social list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin">
+									</i></a></li>
+                                        <li>
+                                            <a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-info text-uppercase">
+                                <h3>Amir Mahmoud</h3>
+                                <p>Project Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-staff text-center">
+                            <div class="staff-pic"> <img alt="" class="img-responsive" src="images/team/5.jpg" />
+                                <div class="staff-overlay">
+                                    <ul class="team-social list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter">
+									</i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin">
+									</i></a></li>
+                                        <li>
+                                            <a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="staff-info text-uppercase">
+                                <h3>Amir Mahmoud</h3>
+                                <p>Project Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container logo-container" style="overflow: scroll;display: flex;padding: 2rem;">
+        <img style="" src="images/flexco logo original.jpg" alt="">
+        <img style="" src="images/gates logo original.jpg" alt="">
+        <img style="" src="images/indo logo.PNG" alt="">
+        <img style="" src="images/Indus Logos 2.jpg" alt="">
+        <img style="" src="images/ammeraal logo original.jpg" alt="">
+        
+
+    </div>
+
+
+    <!-- <div class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center"> <img alt="" class="img-responsive center-block" src="images/brandLogo1.jpg" style="opacity: 1; margin-top: -45px;" /> </div>
+                <div class="col-md-3 text-center"> <img alt="" class="img-responsive center-block" src="images/brandLogo2.jpg" style="opacity: 1" /> </div>
+                <div class="col-md-3 text-center"> <img alt="" class="img-responsive center-block" src="images/brandLogo3.jpg" style="opacity: 1;margin-top: -19px;" /> </div>
+                <div class="col-md-3 text-center"> <img alt="" class="img-responsive center-block" src="images/brandLogo4.jpg" style="opacity: 1;margin-top: -23px;"/> </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="home-blog">
+        <div class="container">
+            <div class="content-head text-center text-uppercase">
+                <h4>Lastest News</h4>
+                <p>Connect With Us All About Darna</p>
+            </div>
+            <div class="row">
+                <div id="home-posts" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <a class="prettyPhoto" data-rel="prettyPhoto" href="images/home/blog/1.jpg"> <i class="fa fa-expand"></i></a> <img alt="" class="img-responsive" src="images/home/blog/1.jpg" /> </div>
+                            <div class="blog-excerpt">
+                                <h3 class="text-uppercase"><a href="#">Madrid's Photographer 
+							Marathon</a></h3>
+                                <div class="blog-meta text-uppercase"> <i class="fa fa-calendar"></i><span>July 19, 2015</span> <i class="fa fa-user"></i><span><a href="#">admin</a></span></div>
+                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <a class="prettyPhoto" data-rel="prettyPhoto" href="images/home/blog/2.jpg"> <i class="fa fa-expand"></i></a> <img alt="" class="img-responsive" src="images/home/blog/2.jpg" /> </div>
+                            <div class="blog-excerpt">
+                                <h3 class="text-uppercase"><a href="#">Iceland's volcano 
+							Timelapse</a></h3>
+                                <div class="blog-meta text-uppercase"> <i class="fa fa-calendar"></i><span>July 19, 2015</span> <i class="fa fa-user"></i><span><a href="#">admin</a></span></div>
+                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <a class="prettyPhoto" data-rel="prettyPhoto" href="images/home/blog/3.jpg"> <i class="fa fa-expand"></i></a> <img alt="" class="img-responsive" src="images/home/blog/3.jpg" /> </div>
+                            <div class="blog-excerpt">
+                                <h3 class="text-uppercase"><a href="#">Construction 
+							You Can Count On</a></h3>
+                                <div class="blog-meta text-uppercase"> <i class="fa fa-calendar"></i><span>July 19, 2015</span> <i class="fa fa-user"></i><span><a href="#">admin</a></span></div>
+                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <a class="prettyPhoto" data-rel="prettyPhoto" href="images/home/blog/4.jpg"> <i class="fa fa-expand"></i></a> <img alt="" class="img-responsive" src="images/home/blog/4.jpg" /> </div>
+                            <div class="blog-excerpt">
+                                <h3 class="text-uppercase"><a href="#">Here Are Many 
+							Variations Of Passages</a></h3>
+                                <div class="blog-meta text-uppercase"> <i class="fa fa-calendar"></i><span>July 19, 2015</span> <i class="fa fa-user"></i><span><a href="#">admin</a></span></div>
+                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <a class="prettyPhoto" data-rel="prettyPhoto" href="images/home/blog/5.jpg"> <i class="fa fa-expand"></i></a> <img alt="" class="img-responsive" src="images/home/blog/5.jpg" /> </div>
+                            <div class="blog-excerpt">
+                                <h3 class="text-uppercase"><a href="#">Recent Trends 
+							In Story Telling</a></h3>
+                                <div class="blog-meta text-uppercase"> <i class="fa fa-calendar"></i><span>July 19, 2015</span> <i class="fa fa-user"></i><span><a href="#">admin</a></span></div>
+                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <footer class="overlay-wrap" style="background-image: url('images/indus-trade-footer.jpg');">
+        <div class="overlay"> </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-push-3 text-center">
+                    <div class="footer-logo ">
+
+                        <div class="clear"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h5>Get in touch</h5>
+                        <ul class="footer-contact">
+                            <li><i class="fa fa-map-marker"></i>XLI/3842, Carmel Buildings, Banerji &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road, Ernakulam - 682018</li>
+                            <li><i class="fa fa-envelope-o"></i>industradelinks1996@gmail.com</li>
+                            <li><i class="fa fa-phone"></i>+91 8129006248, 0484-2366921</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h5>Business Hours</h5>
+                        <ul class="footer-contact">
+                            <li>Monday-Saturday: 9.30am to 6pm</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h5>Twitter Feeds</h5>
+                        <div id="tweecool"> </div>
+                    </div>
+                </div> -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h5>Mailing List</h5>
+                        <div class="footer-newsletter">
+                            <p>Enter your email address for our mailing list to keep your self our lastest updated.</p>
+                            <form>
+                                <input placeholder="Email Address" required="" type="email">
+                                <button type="submit"><i class="fa fa-paper-plane">
+							</i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="footer-menu list-inline text-uppercase">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- -- -- -- -
+Search popup start
+-- -- -- -- -->
+    
+    <!-- -- -- -- -
+Search popup end
+-- -- -- -- -->
+    <!-- -- -- -- -
+Search quote start
+-- -- -- -- -->
+    <!-- -- -- -- -
+Search quote end
+-- -- -- -- -->
+    <!-- -- -- -- -
+back-to-top start
+-- -- -- -- -->
+    <a class="back-to-top" href=".top-bar"> <i aria-hidden="true" class="fa fa-chevron-up"></i></a>
+    <!-- -- -- -- -
+back-to-top end
+-- -- -- -- -->
+    <!-- -- -- -- -
+overlay div start
+-- -- -- -- -->
+    <div class="overlay hided"></div>
+    <!-- -- -- -- -
+overlay div end
+-- -- -- -- -->
+    <!-- jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl-carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- twitter -->
+    <script src="js/twitter.js"></script>
+    <!-- counterup -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/vendors/jquery.counterup.min.js"></script>
+    <!-- isotope -->
+    <script src="js/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- cookie js -->
+    <script src="js/jquery.cookie.js"></script>
+    <!-- pretty Photo -->
+    <script src="js/pp/js/jquery.prettyPhoto.js"></script>
+    <!-- jquery-ui.min -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="revolution/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+			(Load Extensions only on Local File Systems !  
+			The following part can be removed on Server for On Demand Loading) -->
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.carousel.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.migration.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
+    <script src="revolution/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
+    <link href="revolution/css/navigation.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="revolution/css/settings.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var tpj = jQuery;
+        var revapi204;
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_204_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_204_1");
+            }
+            else {
+                revapi204 = tpj("#rev_slider_204_1").show().revolution({
+                    sliderType: "standard"
+                    , jsFileLocation: "revolution/js/"
+                    , sliderLayout: "fullwidth"
+                    , dottedOverlay: "none"
+                    , delay: 900000000000000000000
+                    , navigation: {
+                        keyboardNavigation: "off"
+                        , keyboard_direction: "horizontal"
+                        , mouseScrollNavigation: "off"
+                        , onHoverStop: "off"
+                        , touch: {
+                            touchenabled: "on"
+                            , swipe_threshold: 75
+                            , swipe_min_touches: 1
+                            , swipe_direction: "horizontal"
+                            , drag_block_vertical: false
+                        }
+                        , arrows: {
+                            style: "persephone"
+                            , enable: true
+                            , hide_onmobile: true
+                            , hide_under: 0
+                            , hide_onleave: false
+                            , tmp: ''
+                            , left: {
+                                h_align: "left"
+                                , v_align: "center"
+                                , h_offset: 20
+                                , v_offset: 0
+                            }
+                            , right: {
+                                h_align: "right"
+                                , v_align: "center"
+                                , h_offset: 20
+                                , v_offset: 0
+                            }
+                        }
+                        , bullets: {
+                            enable: false
+                            , hide_onmobile: true
+                            , hide_under: 600
+                            , style: "metis"
+                            , hide_onleave: true
+                            , hide_delay: 200
+                            , hide_delay_mobile: 1200
+                            , direction: "horizontal"
+                            , h_align: "center"
+                            , v_align: "bottom"
+                            , h_offset: 0
+                            , v_offset: 30
+                            , space: 5
+                            , tmp: '<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
+                        }
+                    }
+                    , viewPort: {
+                        enable: true
+                        , outof: "pause"
+                        , visible_area: "80%"
+                    }
+                    , responsiveLevels: [1240, 1024, 778, 480]
+                    , visibilityLevels: [1240, 1024, 778, 480]
+                    , gridwidth: [1240, 1024, 778, 480]
+                    , gridheight: [700, 650, 600, 500]
+                    , lazyType: "none"
+                    , parallax: {
+                        type: "mouse"
+                        , origo: "slidercenter"
+                        , speed: 2000
+                        , levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50, 46, 47, 48, 49, 50, 55]
+                        , type: "mouse"
+                    , }
+                    , shadow: 0
+                    , spinner: "off"
+                    , stopLoop: "off"
+                    , stopAfterLoops: -1
+                    , stopAtSlide: -1
+                    , shuffle: "off"
+                    , autoHeight: "off"
+                    , hideThumbsOnMobile: "on"
+                    , hideSliderAtLimit: 0
+                    , hideCaptionAtLimit: 0
+                    , hideAllCaptionAtLilmit: 0
+                    , debugMode: false
+                    , fallbacks: {
+                        simplifyAll: "off"
+                        , nextSlideOnWindowFocus: "off"
+                        , disableFocusListener: false
+                    , }
+                });
+            }
+        }); /*ready*/
+    </script>
+    <!-- Main Javascript -->
+    <!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+    <script src="js/jquery.style.switcher.js"></script>
+    <script src="js/main.js"></script>
+    <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+        !!WARINING THIS IS FOR DEMO ONLY YOU CAN DELETE IT 
+         COLOR SWITCHER AND BOXED/WIDE VIEW STARTS
+         -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+    <!-- <link href="css/color.css" rel="stylesheet" id="theme-switch"> -->
+    
+    
+    <script>
+        jQuery(function () {
+            jQuery('#colour-variations ul').styleSwitcher({
+                defaultThemeId: 'theme-switch'
+                , hasPreview: false
+                , cookie: {
+                    expires: 30
+                    , isManagingLoad: true
+                }
+            });
+            jQuery('.option-toggle').click(function () {
+                jQuery('#colour-variations').toggleClass('sleep');
+            });
+            if (jQuery.cookie('layoutCookie') != '') {
+                jQuery('body').addClass(jQuery.cookie('layoutCookie'));
+            }
+        }); 
+
+    </script>
+    <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+        !!WARINING THIS IS FOR DEMO ONLY YOU CAN DELETE IT 
+         COLOR SWITCHER AND BOXED/WIDE VIEW END
+    -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
+</body>
+
+</html>
