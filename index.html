@@ -37,26 +37,34 @@
 
 </head>
 <style>
-    .project-overlay{
+    .project-overlay {
         background-color: #FFB600;
     }
-    .project-overlay h4,a:hover{
+
+    .project-overlay h4,
+    a:hover {
         color: white !important;
     }
-    .project-overlay h4,a:hover +  .project-overlay span{
+
+    .project-overlay h4,
+    a:hover+.project-overlay span {
         color: black;
     }
-    .project-overlay span{
+
+    .project-overlay span {
         color: white;
         font-weight: 600;
     }
-    body{
+
+    body {
         font-family: sans-serif !important;
     }
-    .dropdown-menu li a:hover{
+
+    .dropdown-menu li a:hover {
         color: #f6be30 !important;
     }
-    .logo-container::-webkit-scrollbar{
+
+    .logo-container::-webkit-scrollbar {
         display: none;
     }
 
@@ -67,7 +75,7 @@
         width: auto;
         height: auto;
     }
-    
+
     #colour-variations {
         padding: 10px;
         -webkit-transition: 0.5s;
@@ -87,11 +95,11 @@
         -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
         box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
     }
-    
+
     #colour-variations.sleep {
         margin-left: -140px;
     }
-    
+
     #colour-variations h3 {
         text-align: center;
         ;
@@ -103,23 +111,23 @@
         padding: 0;
         ;
     }
-    
+
     #colour-variations ul,
     #colour-variations ul li {
         padding: 0;
         margin: 0;
     }
-    
+
     #colour-variations ul {
         margin-bottom: 20px;
         float: left;
     }
-    
+
     #colour-variations li {
         list-style: none;
         display: inline;
     }
-    
+
     #colour-variations li a {
         width: 20px;
         height: 20px;
@@ -127,40 +135,40 @@
         float: left;
         margin: 5px;
     }
-    
+
     #colour-variations li a[data-theme=style] {
         background: #fff;
         border: 1px solid #ccc
     }
-    
+
     #colour-variations li a[data-theme=red] {
         background: #FA5555;
     }
-    
+
     #colour-variations li a[data-theme=turquoise] {
         background: #27E1CE;
     }
-    
+
     #colour-variations li a[data-theme=blue] {
         background: #2772DB;
     }
-    
+
     #colour-variations li a[data-theme=orange] {
         background: #FF7844;
     }
-    
+
     #colour-variations li a[data-theme=yellow] {
         background: #FCDA05;
     }
-    
+
     #colour-variations li a[data-theme=pink] {
         background: rgb(251, 137, 155);
     }
-    
+
     #colour-variations li a[data-theme=purple] {
         background: #7045FF;
     }
-    
+
     #colour-variations a[data-layout=boxed],
     #colour-variations a[data-layout=wide] {
         padding: 2px 0;
@@ -170,20 +178,20 @@
         color: #777;
         display: block;
     }
-    
+
     #colour-variations a[data-layout=boxed]:hover,
     #colour-variations a[data-layout=wide]:hover {
         border: 1px solid #777;
     }
-    
+
     #colour-variations a[data-layout=boxed] {
         float: left;
     }
-    
+
     #colour-variations a[data-layout=wide] {
         float: right;
     }
-    
+
 
     .option-toggle {
         position: absolute;
@@ -204,14 +212,14 @@
         -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
         box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
     }
-    
+
 
     .option-toggle i {
         top: 5px;
         position: relative;
         font-size: 20px;
     }
-    
+
     .option-toggle:hover,
     .option-toggle:focus,
     .option-toggle:active {
@@ -219,50 +227,67 @@
         text-decoration: none;
         outline: none;
     }
-    
-    .brandLogos::-webkit-scrollbar{
+
+    .brandLogos::-webkit-scrollbar {
         display: none;
     }
-    .indflexLogo{
+
+    .indflexLogo {
         width: 15rem;
     }
+
     @media (max-width:1000px) {
-        .indflexLogo{
-        width: 13rem;
-    }
-    }
-    @media (max-width:600px) {
-        .indflexLogo{
-        width: 11rem;
-    }
-    }
-    @media (max-width:400px) {
-        .indflexLogo{
-        width: 9rem;
-    }
-    }
-    @media (max-width:550px) {
-        .brandImage{
+        .indflexLogo {
             width: 13rem;
         }
     }
+
     @media (max-width:600px) {
-        .iframeContainer{
+        .indflexLogo {
+            width: 11rem;
+        }
+    }
+
+    @media (max-width:400px) {
+        .indflexLogo {
+            width: 9rem;
+        }
+    }
+
+    @media (max-width:550px) {
+        .brandImage {
+            width: 13rem;
+        }
+    }
+
+    @media (max-width:600px) {
+        .iframeContainer {
             width: 98% !important;
             aspect-ratio: 1/0.6 !important;
         }
     }
-    .projectsContainer img{
+
+    .projectsContainer img {
         width: 100%;
         aspect-ratio: 1/1;
         object-fit: contain;
     }
-    .tp-bgimg{
-        background-color: rgba(0,0, 0, 0.5) !important;
+
+    .tp-bgimg {
+        background-color: rgba(0, 0, 0, 0.2) !important;
         background-blend-mode: multiply !important;
+       
     }
 
+    @media(max-width:600px) {
+        .tp-bgimg {
+            margin-top: 3rem !important;
+            
+          
+            height: auto;
+        }
 
+    }
 </style>
 
 <body>
@@ -282,7 +307,7 @@
             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
          NAVGATION START
          -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-            <div class="navbar-header" style="display: flex;align-items: center;">
+            <div class="navbar-header" style="display: flex;align-items: center;background-color: #C1C1C1;">
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
          BURGER MENU START
          -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -293,8 +318,11 @@
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
          LOGO START
          -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                <a class="navbar-brand" href="index.html"> <img class="indflexLogo" alt="" src="images/indusLogo.svg" style=" margin-top: -0.5rem;mix-blend-mode: multiply;"></a> 
-                <a class="" href="index.html" style="z-index: 888;"> <img  alt="" class="iso" src="images/iso logo (1).jpg" style=" margin-top: -0.5rem;mix-blend-mode: multiply;width: 10rem;min-width: 7rem;"></a> 
+                <a class="navbar-brand" href="index.html"> <img class="indflexLogo" alt="" src="images/indusLogo.svg"
+                        style=" margin-top: -0.5rem;mix-blend-mode: multiply;"></a>
+                <a class="" href="index.html" style="z-index: 888;"> <img alt="" class="iso"
+                        src="images/iso logo (1).jpg"
+                        style=" margin-top: -0.5rem;mix-blend-mode: multiply;width: 10rem;min-width: 7rem;"></a>
 
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
          LOGO END
@@ -307,27 +335,30 @@
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU HOME START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                           <li class="active"> <a   href="index.html" >Home</a>
-                                
-                           </li>
+                            <li class="active"> <a href="index.html">Home</a>
+
+                            </li>
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU HOME END
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU PAGES START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                            <li class="dropdown"> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                           HOSES</a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                            <li><a href="hydraulic-hose-pipes.html">HYDRAULIC HOSE PIPES</a></li>
-                            <li><a href="industrial-hose-pipes.html">INDUSTRIAL HOSE PIPES</a></li>
-                            <li><a href="ptfe-hose-pipes.html">PIFE HOSE PIPES</a></li>
-                            <li><a href="stainless-steel-hose.html">STAINLESS STEEL BELOW HOSE PIPES</a></li>
-                            <li><a href="pvc-braided-hose.html">NYLON BRAIDED PVC HOSE</a></li>
-                            <li><a href="air-conditioning-refregerent.html">AIR CONDITIONING REFRIGERANT HOSE</a></li>
-                            <li><a href="angus-hose.html">ANGUS AVIATION FUELING HOSE</a></li>
-                            <li><a href="plutone-hose.html">PLUTONE BIO PHATHALATE FOOD GRADE PVC STEEL REINFORCED HOSE</a></li>
-                        </ul>
+                            <li class="dropdown"> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                                    data-toggle="dropdown" href="#" role="button">
+                                    HOSES</a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="hydraulic-hose-pipes.html">HYDRAULIC HOSE PIPES</a></li>
+                                    <li><a href="industrial-hose-pipes.html">INDUSTRIAL HOSE PIPES</a></li>
+                                    <li><a href="ptfe-hose-pipes.html">PIFE HOSE PIPES</a></li>
+                                    <li><a href="stainless-steel-hose.html">STAINLESS STEEL BELOW HOSE PIPES</a></li>
+                                    <li><a href="pvc-braided-hose.html">NYLON BRAIDED PVC HOSE</a></li>
+                                    <li><a href="air-conditioning-refregerent.html">AIR CONDITIONING REFRIGERANT
+                                            HOSE</a></li>
+                                    <li><a href="angus-hose.html">ANGUS AVIATION FUELING HOSE</a></li>
+                                    <li><a href="plutone-hose.html">PLUTONE BIO PHATHALATE FOOD GRADE PVC STEEL
+                                            REINFORCED HOSE</a></li>
+                                </ul>
                             </li>
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU HOME END
@@ -335,14 +366,15 @@
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU Projects START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                            <li class="dropdown"> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                           TRELLEBORG</a>
+                            <li class="dropdown"> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                                    data-toggle="dropdown" href="#" role="button">
+                                    TRELLEBORG</a>
                                 <ul class="dropdown-menu dropdown-menu-left">
                                     <li><a href="Food-Grade-Hose.html">FOOD GRADE HOSE</a></li>
                                     <li><a href="construction-hose.html">CONSTRUCTION HOSE</a> </li>
                                     <li><a href="chemical-hose.html">CHEMICAL HOSE</a> </li>
                                     <li><a href="oil&petroleum-hose.html">OIL & PETROLEUM HOSE</a> </li>
-                                   
+
                                 </ul>
                             </li>
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
@@ -351,8 +383,9 @@
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU SHOP START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                            <li class="dropdown "> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                           COUPLINGS & ADAPTERS</a>
+                            <li class="dropdown "> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                                    data-toggle="dropdown" href="#" role="button">
+                                    COUPLINGS & ADAPTERS</a>
                                 <ul class="dropdown-menu  dropdown-menu-left">
                                     <li><a href="spiral-fitting.html">SPIRAL FITTING</a></li>
                                     <li><a href="megacrimp-couplings.html">MEGACRIMP COUPLINGS</a></li>
@@ -364,25 +397,29 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown "> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-                                CONVEYOR BELTS</a>
-                                     <ul class="dropdown-menu  dropdown-menu-left">
-                                         <li><a style="text-transform: uppercase;" href="ammega-conveyor-belt.html">Ammega Make Conveyor belt</a></li>
-                                         <li><a style="text-transform: uppercase;" href="flexco-conveyor-belt.html">Flexco Conveyor belt fastening</a></li>
-                                         <li><a style="text-transform: uppercase;" href="flexco-belt-cleaning.html">Flexco Belt Cleaning systems</a></li>
-                                        
-                                     </ul>
-                                 </li>
+                            <li class="dropdown "> <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                                    data-toggle="dropdown" href="#" role="button">
+                                    CONVEYOR BELTS</a>
+                                <ul class="dropdown-menu  dropdown-menu-left">
+                                    <li><a style="text-transform: uppercase;" href="ammega-conveyor-belt.html">Ammega
+                                            Make Conveyor belt</a></li>
+                                    <li><a style="text-transform: uppercase;" href="flexco-conveyor-belt.html">Flexco
+                                            Conveyor belt fastening</a></li>
+                                    <li><a style="text-transform: uppercase;" href="flexco-belt-cleaning.html">Flexco
+                                            Belt Cleaning systems</a></li>
+
+                                </ul>
+                            </li>
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU SHOP END
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU Blog START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                           <li class="dropdown"> <a href="videos.html" >
-                            VIDEOS</a>
-                                 
-                             </li>
+                            <li class="dropdown"> <a href="videos.html">
+                                    VIDEOS</a>
+
+                            </li>
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU Blog END
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -390,32 +427,32 @@
                            MENU ShortCodes START
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                             <li class="dropdown"> <a href="about.html">
-                           ABOUT US</a>
-                                
+                                    ABOUT US</a>
+
                             </li>
                             <li class="dropdown"> <a href="contact.html">
-                                CONTACT US</a>
-                                     
-                                 </li>
+                                    CONTACT US</a>
+
+                            </li>
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                            MENU ShortCodes END
                            -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                   SHOPCART, SEARCH AND GET QUOTE AREA START
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                            
-                                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                   SEARCH START
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                                
-                                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                   SHOPPING CART START
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                                
-                                <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
+
+                            <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                   QUOTE START
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-                                
+
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                   SHOPCART, SEARCH AND GET QUOTE AREA END
                   -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -432,17 +469,42 @@
 			========================================================================= -->
     <!-- SLIDER STARTS
 			========================================================================= -->
-    <div class="slider">
-        <div id="rev_slider_204_1_wrapper" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive">
+    <div class="slider" style="background-color: rgba(0, 0, 0,0.5);background-blend-mode: multiply;">
+        <div id="rev_slider_204_1_wrapper"
+            class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive">
             <!-- START REVOLUTION SLIDER 5.1.1RC auto mode -->
-            <div id="rev_slider_204_1" class="rev_slider fullwidthabanner" data-version="5.1.1RC" style="display: none;">
+            <div id="rev_slider_204_1" class="rev_slider fullwidthabanner" data-version="5.1.1RC"
+                style="display: none;">
                 <ul>
-                    <li data-description="" data-easein="default" data-easeout="default" data-index="rs-4" data-masterspeed="1500" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-thumb="images/banner-1.jpg" data-title="Slide 1" data-transition="random"> <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/ezgif.com-gif-maker (12).webp">
-                        <div id="slide-4-layer-1" class="tp-caption darnaverylargetextprimary   tp-resizeme" data-height="auto" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;" data-transform_out="x:left;skX:45px;s:500;s:500;" data-width="auto" data-x="30" data-y="200" style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> INDFLEX</div>
-                        <div id="slide-4-layer-2" class="tp-caption darnaverylargetext   tp-resizeme" data-height="auto" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000" data-transform_idle="" data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;" data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;s:500;" data-width="auto" data-x="40" data-y="270" style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);color: #da251c;"> INDUS TRADE LINKS</div>
+                    <li data-description="" data-easein="default" data-easeout="default" data-index="rs-4"
+                        data-masterspeed="1500" data-rotate="0" data-saveperformance="off" data-slotamount="7"
+                        data-thumb="images/banner-1.jpg" data-title="Slide 1" data-transition="random"> <img alt=""
+                            class="rev-slidebg" data-bgfit="cover" data-bgposition="center center"
+                            data-bgrepeat="no-repeat" data-no-retina="" src="images/ezgif.com-gif-maker (13).webp">
+                        <!-- <div id="slide-4-layer-1" class="tp-caption darnaverylargetextprimary   tp-resizeme"
+                            data-height="auto" data-responsive_offset="on" data-splitin="none" data-splitout="none"
+                            data-start="500" data-transform_idle=""
+                            data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;"
+                            data-transform_out="x:left;skX:45px;s:500;s:500;" data-width="auto" data-x="30" data-y="200"
+                            style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> INDFLEX
+                        </div> -->
+                        <!-- <div id="slide-4-layer-2" class="tp-caption darnaverylargetext   tp-resizeme" data-height="auto"
+                            data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000"
+                            data-transform_idle=""
+                            data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;s:500;"
+                            data-width="auto" data-x="40" data-y="270"
+                            style="z-index: 6; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);color: #da251c;">
+                            INDUS TRADE LINKS</div> -->
 
-                        <div id="slide-4-layer-4" class="tp-caption   tp-resizeme" data-height="auto" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;e:Bounce.easeOut;" data-transform_out="x:right;skX:-85px;s:300;s:300;" data-width="auto" data-x="30" data-y="400" style="z-index: 8; white-space: nowrap;"> <a class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
-					About Us</a></div>
+                        <!-- <div id="slide-4-layer-4" class="tp-caption   tp-resizeme" data-height="auto"
+                            data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000"
+                            data-transform_idle=""
+                            data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:500;e:Bounce.easeOut;"
+                            data-transform_out="x:right;skX:-85px;s:300;s:300;" data-width="auto" data-x="30"
+                            data-y="400" style="z-index: 8; white-space: nowrap;"> <a
+                                class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
+                                About Us</a></div> -->
                     </li>
                     <!-- <li data-description="" data-easein="default" data-easeout="default" data-index="rs-5" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-thumb="images/banner-1.jpg" data-title="Slide 2" data-transition="random"> <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="images/banner-1.jpg">
                         <div id="slide-5-layer-1" class="tp-caption darnalargetext   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:1000;e:easeOutBounce;" data-transform_out="x:left;skX:45px;s:300;s:300;" data-width="auto" data-x="center" data-y="200" style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> <span class="darna-slider-border-bottom">Engineering your dreams 
@@ -451,14 +513,18 @@
                         <div id="slide-5-layer-3" class="tp-caption   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeOutBounce;" data-transform_out="x:200px;skX:-85px;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="382" style="z-index: 7; white-space: nowrap;"> <a class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
                             About Us</a></div>
                     </li> -->
-                    <li data-description="" data-easein="default" data-easeout="default" data-index="rs-6" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7" data-thumb="images/couplings1(1).jpg" data-title="Slide 3" data-transition="random"> <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" data-no-retina="" src="images/ezgif.com-gif-maker (13).webp">
-                        <div id="slide-6-layer-1" class="tp-caption darnalargetext   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="y:top;s:1000;e:easeOutElastic;" data-transform_out="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="185" style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> Welcome to Indus Trade Links</div>
-                        <div id="slide-6-layer-2" class="tp-caption darnalargeprimarybg   tp-resizeme" data-elementdelay="0.1" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;" data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="250" style="z-index: 6; white-space: nowrap; color: rgba(255, 255, 255, 1.00); background-color: rgba(255, 182, 0, 100.00); padding: 15px 20px 15px 20px; border-color: rgba(255, 255, 255, 1.00);"> ALWAYS DEDICATED &amp; DEVOTED</div>
+                    <li data-description="" data-easein="default" data-easeout="default" data-index="rs-6"
+                        data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-slotamount="7"
+                        data-thumb="images/couplings1(1).jpg" data-title="Slide 3" data-transition="random"> <img alt=""
+                            class="rev-slidebg" data-bgfit="cover" data-bgposition="center top"
+                            data-bgrepeat="no-repeat" data-no-retina="" src="images/ezgif.com-gif-maker (14).webp">
+                        <!-- <div id="slide-6-layer-1" class="tp-caption darnalargetext   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="y:top;s:1000;e:easeOutElastic;" data-transform_out="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="185" style="z-index: 5; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> Welcome to Indus Trade Links</div> -->
+                        <!-- <div id="slide-6-layer-2" class="tp-caption darnalargeprimarybg   tp-resizeme" data-elementdelay="0.1" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="500" data-transform_idle="" data-transform_in="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0;sY:0;skX:0;skY:0;opacity:0;s:1000;e:easeInOutBack;" data-transform_out="x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="250" style="z-index: 6; white-space: nowrap; color: rgba(255, 255, 255, 1.00); background-color: rgba(255, 182, 0, 100.00); padding: 15px 20px 15px 20px; border-color: rgba(255, 255, 255, 1.00);"> ALWAYS DEDICATED &amp; DEVOTED</div> -->
                         <!-- <div id="slide-6-layer-3" class="tp-caption darnasmalltext2   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000" data-transform_idle="" data-transform_in="x:50;y:150;z:0;rX:0;rY:0;rZ:0;sX:0.5;sY:0.5;skX:0;skY:0;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="x:{-250,250};y:{-150,150};rX:{-90,90};rY:{-90,90};rZ:{-360,360};sX:0;sY:0;opacity:0;s:300;s:300;" data-width="auto" data-x="center" data-y="343" style="z-index: 7; white-space: nowrap; border-color: rgba(255, 255, 255, 1.00);"> We aim to eliminate the task of dividing your project between different architecture and
                             <br /> construction company. We are a company that offers design and build services for
                             <br /> you from initial sketches to the final construction.</div> -->
-                        <div id="slide-6-layer-4" class="tp-caption   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-width="auto" data-x="center" data-y="430" style="z-index: 8; white-space: nowrap;margin-top: -6rem !important;"> <a class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
-					About Us</a> </div>
+                        <!-- <div id="slide-6-layer-4" class="tp-caption   tp-resizeme" data-height="auto" data-hoffset="0" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_idle="" data-transform_in="opacity:0;s:300;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-width="auto" data-x="center" data-y="430" style="z-index: 8; white-space: nowrap;margin-top: -6rem !important;"> <a class="darna-button style1 size-md" href="about.html" style="margin-right: 10px;">
+					About Us</a> </div> -->
                     </li>
                 </ul>
                 <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"> </div>
@@ -506,22 +572,35 @@
     </div> -->
 
 
-    <div class="container services" style="background-color: #f6be30; padding: 2rem 5%; margin-top: 4rem;">
-        <div class="row" >
-            <div class="col-md-12" >
-                <h1 style="margin-bottom: 3rem; text-align: center;">Our Services And Solutions</h1>
+    <div class="container services" style="background-color:#B4000F; padding: 2rem 5%; margin-top: 4rem;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="margin-bottom: 3rem; text-align: center; color: white !important;">Our Services And Solutions</h1>
             </div>
             <div class="col-md-12 " style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
-                <p style="text-align: justify;color: black;">We supply a wide range of customized hydraulic and industrial hose assemblies suitable for different mediums of application, at specific temperature and pressure. Sample verification at customer sites can be offered to the clients based on request. </p>
+                <p style="text-align: justify;color: white;">We supply a wide range of customized hydraulic and
+                    industrial hose assemblies suitable for different mediums of application, at specific temperature
+                    and pressure. Sample verification at customer sites can be offered to the clients based on request.
+                </p>
             </div>
             <div class="col-md-12" style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
-                <p style="text-align: justify;color: black;">We have a wide range of SS corrugated bellow hoses which are used in extreme high temperature, which are tig welded and supplied after necessary testing. The medium of application is mostly gases, steam and acids</p>
+                <p style="text-align: justify;color: white;">We have a wide range of SS corrugated bellow hoses which
+                    are used in extreme high temperature, which are tig welded and supplied after necessary testing. The
+                    medium of application is mostly gases, steam and acids</p>
             </div>
             <div class="col-md-12" style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
-                <p style="text-align: justify;color: black;">Our product line includes food grade, chemical, construction and oil & petroleum transfer hoses - FDA approved Food Grade Hoses for all kinds of food, Chemical hoses for acids and Construction Hoses for cement feeding and concrete loading/unloading purpose</p>
+                <p style="text-align: justify;color: white;">Our product line includes food grade, chemical,
+                    construction and oil & petroleum transfer hoses - FDA approved Food Grade Hoses for all kinds of
+                    food, Chemical hoses for acids and Construction Hoses for cement feeding and concrete
+                    loading/unloading purpose</p>
             </div>
             <div class="col-md-12" style="margin-top: 3rem;border-top: 1px solid rgba(0, 0, 0, 0.6);">
-                <p style="text-align: justify;color: black;hyphens: auto;"> We are active suppliers of all kinds of conveyor belts - rubber(plain & rough top), pu, pvc, cotton canvas including food grade type. Indus also undertakes fastening of all these kinds of conveyor belts using the Flexco belt joining tool.  The industrial segments catered to includes Airport baggage, Packaging, Tyre manufacturers, Cattlefeed, Hospitals, Cement Plants, Mineral and Chemical Cos, Plywood, Crumb Rubber, Tea, Laundry, Rice Mill etc.</p>
+                <p style="text-align: justify;color: white;hyphens: auto;"> We are active suppliers of all kinds of
+                    conveyor belts - rubber(plain & rough top), pu, pvc, cotton canvas including food grade type. Indus
+                    also undertakes fastening of all these kinds of conveyor belts using the Flexco belt joining tool.
+                    The industrial segments catered to includes Airport baggage, Packaging, Tyre manufacturers,
+                    Cattlefeed, Hospitals, Cement Plants, Mineral and Chemical Cos, Plywood, Crumb Rubber, Tea, Laundry,
+                    Rice Mill etc.</p>
             </div>
         </div>
     </div>
@@ -563,9 +642,11 @@
             <div class="row">
                 <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item architecture interiordesign">
-                        <div class="project-item"> <img src="images/hydraulic-changed 1.png" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/hydraulic-changed 1.png" class="img-responsive"
+                                alt="" />
                             <div class="project-overlay" style="background-color: #FFB600">
-                                <h4><a href="hydraulic-hose-pipes.html">HYDRAULIC HOSE PIPES</a></h4> <span class="project-cat">HOSES</span> 
+                                <h4><a href="hydraulic-hose-pipes.html">HYDRAULIC HOSE PIPES</a></h4> <span
+                                    class="project-cat">HOSES</span>
                             </div>
                         </div>
                     </div>
@@ -574,9 +655,11 @@
 
                 <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item contruction">
-                        <div class="project-item"> <img src="images/industrial-hose-pipes1-changed..gif.png" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/industrial-hose-pipes1-changed..gif.png"
+                                class="img-responsive" alt="" />
                             <div class="project-overlay" style="background-color: #FFB600;">
-                                <h4><a href="industrial-hose-pipes.html">INDUSTRIAL HOSE PIPES</a></h4> <span class="project-cat">HOSES</span> 
+                                <h4><a href="industrial-hose-pipes.html">INDUSTRIAL HOSE PIPES</a></h4> <span
+                                    class="project-cat">HOSES</span>
                                 <!-- <a class="project-expand prettyPhoto" data-rel="prettyPhoto" href="images/home/projects/2.jpg"> <i class="fa fa-arrows-alt"></i></a> -->
                             </div>
                         </div>
@@ -585,10 +668,11 @@
 
                 <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item architecture interiordesign ">
-                        <div class="project-item"> <img src="images/Food-Grade-Hose1-changed..jpg.png" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/Food-Grade-Hose1-changed..jpg.png"
+                                class="img-responsive" alt="" />
                             <div class="project-overlay" style="background-color: #FFB600;">
                                 <h4><a href="#">FOOD GRADE HOSE</a></h4> <span class="project-cat">TRELLEBORG</span>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -596,10 +680,12 @@
 
                 <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item contruction ">
-                        <div class="project-item"> <img src="images/construction-hose-changed..jpg.png" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/construction-hose-changed..jpg.png"
+                                class="img-responsive" alt="" />
                             <div class="project-overlay" style="background-color: #FFB600;">
-                                <h4><a href="construction-hose.html">CONSTRUCTION HOSE</a></h4> <span class="project-cat">TRELLEBORG</span>
-                               
+                                <h4><a href="construction-hose.html">CONSTRUCTION HOSE</a></h4> <span
+                                    class="project-cat">TRELLEBORG</span>
+
                             </div>
                         </div>
                     </div>
@@ -607,10 +693,12 @@
 
                 <div class="  col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item interiordesign contruction ">
-                        <div class="project-item"> <img src="images/spiral-fitting1-changed.jpg.png" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/spiral-fitting1-changed.jpg.png"
+                                class="img-responsive" alt="" />
                             <div class="project-overlay" style="background-color: #FFB600;">
-                                <h4><a href="spiral-fitting.html">SPIRAL FITTING</a></h4> <span class="project-cat">COUPLINGS & ADAPTERS</span> 
-                                
+                                <h4><a href="spiral-fitting.html">SPIRAL FITTING</a></h4> <span
+                                    class="project-cat">COUPLINGS & ADAPTERS</span>
+
                             </div>
                         </div>
                     </div>
@@ -618,10 +706,12 @@
 
                 <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item architecture">
-                        <div class="project-item"> <img src="images/toggle-clamps-changed..png" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/toggle-clamps-changed..png" class="img-responsive"
+                                alt="" />
                             <div class="project-overlay" style="background-color: #FFB600;">
-                                <h4><a href="toggle-clamps.html">TOGGLE CLAMPS</a></h4> <span class="project-cat">COUPLINGS & ADAPTERS</span> 
-                                
+                                <h4><a href="toggle-clamps.html">TOGGLE CLAMPS</a></h4> <span
+                                    class="project-cat">COUPLINGS & ADAPTERS</span>
+
                             </div>
                         </div>
                     </div>
@@ -630,10 +720,12 @@
 
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item contruction">
-                        <div class="project-item"> <img src="images/mechanical-belt-fastners.jpg" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/mechanical-belt-fastners.jpg" class="img-responsive"
+                                alt="" />
                             <div class="project-overlay" style="background-color: #FFB600;">
-                                <h4><a href="conveyor-belt.html">Flexco Conveyor belt fastening</a></h4> <span class="project-cat">CONVEYOR BELTS</span> 
-                                
+                                <h4><a href="conveyor-belt.html">Flexco Conveyor belt fastening</a></h4> <span
+                                    class="project-cat">CONVEYOR BELTS</span>
+
                             </div>
                         </div>
                     </div>
@@ -642,10 +734,12 @@
 
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-3" style="margin-top: 1rem;">
                     <div class="folio-item contruction">
-                        <div class="project-item"> <img src="images/conveyor-cleaning1.jpg" class="img-responsive" alt="" />
+                        <div class="project-item"> <img src="images/conveyor-cleaning1.jpg" class="img-responsive"
+                                alt="" />
                             <div class="project-overlay" style="background-color: #FFB600;">
-                                <h4><a href="conveyor-belt.html">Flexco Belt Cleaning systems</a></h4> <span class="project-cat">CONVEYOR BELTS</span> 
-                                
+                                <h4><a href="conveyor-belt.html">Flexco Belt Cleaning systems</a></h4> <span
+                                    class="project-cat">CONVEYOR BELTS</span>
+
                             </div>
                         </div>
                     </div>
@@ -653,13 +747,14 @@
 
             </div>
         </div>
-        <div class="container text-center space-top-45"> <a class="bttn bttn-bdr-black bttn-md center-block hidingBtn " href="projects_grid_4col.html">View All</a> </div>
+        <div class="container text-center space-top-45"> <a class="bttn bttn-bdr-black bttn-md center-block hidingBtn "
+                href="projects_grid_4col.html">View All</a> </div>
 
 
-        
 
 
-        
+
+
     </div>
 
     <div class="container " style="background-color: rgba(0, 0, 0, .7);padding: 2rem;">
@@ -667,19 +762,29 @@
             <div class="col-md-12">
                 <!-- <h1  style="margin-top: 2rem; color: white; font-size: clamp(3rem,4vw,4rem);">MANUFACTURES AND SUPPLIERS OF HOSES, COUPLINGS AND ADAPTERS</h1> -->
                 <p style="text-align: justify;margin-top:2rem ; color: white; font-size: 1.5rem;">
-                    INDUS TRADE LINKS since its’ inception, is the sole distributor and assembler for Gates products in Kerala. Gates Corporation USA, founded in 1911, is the world’s leading manufacturer of power transmission belts and a premier global manufacturer of power products (industrial & hydraulic hoses/end fittings and power transmission belts). A subsidiary of the parent company, Gates India Ltd; from Lalru, offers a complete portfolio of premium product and service solutions for both replacement and first-fit applications across targeted end markets, which encompass process and speciality, construction, agriculture, energy, transportation and automotive.............</p> <br>
-                
+                    INDUS TRADE LINKS since its’ inception, is the sole distributor and assembler for Gates products in
+                    Kerala. Gates Corporation USA, founded in 1911, is the world’s leading manufacturer of power
+                    transmission belts and a premier global manufacturer of power products (industrial & hydraulic
+                    hoses/end fittings and power transmission belts). A subsidiary of the parent company, Gates India
+                    Ltd; from Lalru, offers a complete portfolio of premium product and service solutions for both
+                    replacement and first-fit applications across targeted end markets, which encompass process and
+                    speciality, construction, agriculture, energy, transportation and automotive.............</p> <br>
+
             </div>
             <div class="col-md-12">
-                <a  style=" margin-top: 2rem; padding: 1rem 2rem; color: white; font-size: 1.5rem; font-weight: 600; border-radius: 10px; background-color: rgba(155, 152, 152, 0.5);" href="about.html">About Us</a>
+                <a style=" margin-top: 2rem; padding: 1rem 2rem; color: white; font-size: 1.5rem; font-weight: 600; border-radius: 10px; background-color: rgba(155, 152, 152, 0.5);"
+                    href="about.html">About Us</a>
             </div>
         </div>
     </div>
     <div class="container" style="display: flex;align-items: center;justify-content: center;margin-top: 3rem;">
         <div class="iframeContainer" style="width: 80%;aspect-ratio: 1/0.5;">
-            <iframe style="width: 100%;height: 100%;" src="https://www.youtube.com/embed/Mw7atyV_tfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe style="width: 100%;height: 100%;" src="https://www.youtube.com/embed/Mw7atyV_tfQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        
+
     </div>
     <!-- <div class="counter-box">
         <div class="container">
@@ -848,7 +953,7 @@
         <img style="" src="images/indo logo.PNG" alt="">
         <img style="" src="images/Indus Logos 2.jpg" alt="">
         <img style="" src="images/ammeraal logo original.jpg" alt="">
-        
+
 
     </div>
 
@@ -955,10 +1060,11 @@
                     <div class="footer-widget">
                         <h5>Get in touch</h5>
                         <ul class="footer-contact">
-                            <li><i class="fa fa-map-marker"></i>XLI/3842, Carmel Buildings, Banerji &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road, Ernakulam - 682018</li>
+                            <li><i class="fa fa-map-marker"></i>XLI/3842, Carmel Buildings, Banerji
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road, Ernakulam - 682018</li>
                             <li><i class="fa fa-envelope-o"></i>industradelinks1996@gmail.com</li>
                             <li><i class="fa fa-phone"></i>+91 8129006248, 0484-2366921</li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -985,7 +1091,7 @@
                             <form>
                                 <input placeholder="Email Address" required="" type="email">
                                 <button type="submit"><i class="fa fa-paper-plane">
-							</i></button>
+                                    </i></button>
                             </form>
                         </div>
                     </div>
@@ -1001,7 +1107,7 @@
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -1009,7 +1115,7 @@
     <!-- -- -- -- -
 Search popup start
 -- -- -- -- -->
-    
+
     <!-- -- -- -- -
 Search popup end
 -- -- -- -- -->
@@ -1046,7 +1152,7 @@ overlay div end
     <script src="js/vendors/jquery.counterup.min.js"></script>
     <!-- isotope -->
     <script src="js/vendors/isotope/isotope.pkgd.js"></script>
-    
+
     <!-- cookie js -->
     <script src="js/jquery.cookie.js"></script>
     <!-- pretty Photo -->
@@ -1149,7 +1255,8 @@ overlay div end
                         , speed: 2000
                         , levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50, 46, 47, 48, 49, 50, 55]
                         , type: "mouse"
-                    , }
+                        ,
+                    }
                     , shadow: 0
                     , spinner: "off"
                     , stopLoop: "off"
@@ -1166,7 +1273,8 @@ overlay div end
                         simplifyAll: "off"
                         , nextSlideOnWindowFocus: "off"
                         , disableFocusListener: false
-                    , }
+                        ,
+                    }
                 });
             }
         }); /*ready*/
@@ -1180,8 +1288,8 @@ overlay div end
          COLOR SWITCHER AND BOXED/WIDE VIEW STARTS
          -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
     <!-- <link href="css/color.css" rel="stylesheet" id="theme-switch"> -->
-    
-    
+
+
     <script>
         jQuery(function () {
             jQuery('#colour-variations ul').styleSwitcher({
@@ -1198,7 +1306,7 @@ overlay div end
             if (jQuery.cookie('layoutCookie') != '') {
                 jQuery('body').addClass(jQuery.cookie('layoutCookie'));
             }
-        }); 
+        });
 
     </script>
     <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
