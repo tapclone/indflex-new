@@ -7936,3 +7936,6 @@ body.boxed-pattern .rev_slider {
     min-width: 14rem;
     object-fit: contain;
 }
+.footer-newsletter p{
+    color: #8F8F8F;
+}
